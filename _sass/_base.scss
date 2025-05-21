@@ -73,7 +73,7 @@ aside {
     background-color: white;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
-    @include transition-all;
+    
     .navbar-header .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
@@ -108,43 +108,7 @@ aside {
             }
         }
     }
-    @media (min-width: 768px) {
-        background-color: transparent;
-        border-color: rgba(white, .3);
-        .navbar-header .navbar-brand {
-            color: rgba(white, .7);
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
-        .nav > li > a,
-        .nav > li > a:focus {
-            color: rgba(white, .7);
-            &:hover {
-                color: white;
-            }
-        }
-        &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
-            .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken($theme-primary, 10%);
-                }
-            }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-        }
-    }
+    
 }
 
 // Homepage Header
@@ -153,31 +117,44 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
+    //background-color: white;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/qa.jpg');
     text-align: center;
     color: white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.6); // 0.5 = 50% black, adjust as needed
+        z-index: 1;
+    }
+    
     .header-content {
         position: relative;
-        text-align: center;
+        z-index: 2; // Make sure this is above the overlay!
+        text-align: right;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
+                font-weight: 1000;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
             }
             hr {
-                margin: 30px auto;
+                margin-bottom: 10px auto;
             }
             p {
-                font-weight: 300;
-                color: rgba(white, .7);
+                font-weight: 1000;
+                color: rgba(white, .85);
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                text-align: left;
             }
         }
     }
