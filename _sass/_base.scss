@@ -326,3 +326,19 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+#consulting {
+  background: #f9f9f9;
+  padding: 40px 0;
+}
+#consulting .section-heading {
+  color: #2c3e50;
+  font-size: 2.5em;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 320px;        /* Set to your desired height */
+  object-fit: cover;    /* Crops the image to fill the box */
+  object-position: center; /* Center the crop */
+  display: block;
+}
