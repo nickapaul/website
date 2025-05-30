@@ -9,9 +9,9 @@
                 <span class="icon-bar"></span>
             </button>
             {% if page.url == "/" or page.url == "/index.html" %}
-              <a class="navbar-brand page-scroll" href="#Header">Nicolas Andres Paul</a>
+              <a class="navbar-brand page-scroll" href="{{ site.baseurl }}/#Header">Nicolas Andres Paul</a>
             {% else %}
-              <a class="navbar-brand" href="/#Header">Nicolas Andres Paul</a>
+              <a class="navbar-brand" href="{{ site.baseurl }}/#Header">Nicolas Andres Paul</a>
             {% endif %}
         </div>
 
@@ -20,30 +20,30 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     {% if page.url == "/" or page.url == "/index.html" %}
-                        <a class="page-scroll" href="#Header">About</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}/#Header">About</a>
                     {% else %}
-                        <a href="/#Header">About</a>
+                        <a href="{{ site.baseurl }}/#Header">About</a>
                     {% endif %}
                 </li>
                 <li>
                     {% if page.url == "/" or page.url == "/index.html" %}
-                        <a class="page-scroll" href="#services">Values</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}/#services">Values</a>
                     {% else %}
-                        <a href="/#services">Values</a>
+                        <a href="{{ site.baseurl }}/#services">Values</a>
                     {% endif %}
                 </li>
                 <li>
                     {% if page.url == "/" or page.url == "/index.html" %}
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}/#portfolio">Portfolio</a>
                     {% else %}
-                        <a href="/#portfolio">Portfolio</a>
+                        <a href="{{ site.baseurl }}/#portfolio">Portfolio</a>
                     {% endif %}
                 </li>
                 <li>
                     {% if page.url == "/" or page.url == "/index.html" %}
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}/#contact">Contact</a>
                     {% else %}
-                        <a href="/#contact">Contact</a>
+                        <a href="{{ site.baseurl }}/#contact">Contact</a>
                     {% endif %}
                 </li>
             </ul>

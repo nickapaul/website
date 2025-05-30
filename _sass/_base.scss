@@ -120,7 +120,7 @@ header {
     //background-color: white;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/qa.jpg');
+    background-image: url('../img/qa2.jpg');
     text-align: center;
     color: white;
 
@@ -128,7 +128,7 @@ header {
         content: "";
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.6); // 0.5 = 50% black, adjust as needed
+        background: rgba(0,0,0,0.75); // 0.5 = 50% black, adjust as needed
         z-index: 1;
     }
     
@@ -326,14 +326,7 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
-#consulting {
-  background: #f9f9f9;
-  padding: 40px 0;
-}
-#consulting .section-heading {
-  color: #2c3e50;
-  font-size: 2.5em;
-}
+
 
 .portfolio-box img {
   width: 100%;
@@ -347,5 +340,19 @@ body {
   margin-left: -20px; /* Adjust value as needed */
   display: inline-block;
   text-align: left;
+}
+
+.consulting-contact {
+  margin-top: 0px; /* Adjust this value as needed */
+}
+
+.service-section {
+  background: #f9f9f9;
+  padding: 40px 0;
+  /* Add or remove border, box-shadow, etc. as needed */
+}
+.service-section .section-heading {
+  color: #2c3e50;
+  font-size: 2.5em;
 }
 
