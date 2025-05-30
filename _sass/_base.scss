@@ -342,3 +342,10 @@ body {
   object-position: center; /* Center the crop */
   display: block;
 }
+
+#contact .fa-envelope-o + p {
+  margin-left: -20px; /* Adjust value as needed */
+  display: inline-block;
+  text-align: left;
+}
+
