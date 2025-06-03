@@ -116,7 +116,8 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    height: auto;
+    min-height: 60vh;
     //background-color: white;
     @include background-cover;
     background-position: center;
@@ -176,6 +177,7 @@ header {
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
+                    align-items: flex-center;
                 }
             }
         }
