@@ -10,8 +10,10 @@ See it live in action at <https://volny.github.io/creative-theme-jekyll/>
 
 Before you begin, ensure you have the following installed on your system:
 
-- **Ruby**: Version 2.5.0 or higher. You can download it from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/).
-- **Bundler**: Install it by running `gem install bundler` in your terminal.
+- **Ruby**: Version 2.5.0 or higher. 
+  - For Windows: Download and install from [RubyInstaller](https://rubyinstaller.org/). Make sure to check the option to add Ruby to your PATH.
+  - For other operating systems: See [ruby-lang.org](https://www.ruby-lang.org/en/downloads/).
+- **Bundler**: After installing Ruby, run `gem install bundler` in your terminal.
 - **Jekyll**: This will be installed via the Gemfile.
 
 ## Installation
