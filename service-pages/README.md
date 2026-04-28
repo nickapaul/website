@@ -13,7 +13,7 @@ service-pages
 │   ├── web-development.html  # Service page for web development
 │   ├── seo-optimization.html  # Service page for SEO optimization
 │   ├── content-creation.html  # Service page for content creation
-│   └── consulting.html        # Service page for consulting services
+│   └── level1.html        # Service page for consulting services
 ├── assets
 │   └── styles.css            # CSS styles for the entire project
 └── README.md                 # Documentation for the project
