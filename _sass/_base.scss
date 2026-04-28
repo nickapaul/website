@@ -306,6 +306,11 @@ header {
             opacity: 1;
         }
     }
+    @media (max-width: 767px) {
+        .portfolio-box-caption {
+            opacity: 1;
+        }
+    }
     @media (min-width: 768px) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
