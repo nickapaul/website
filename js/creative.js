@@ -45,4 +45,22 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    // Portfolio box mobile tap behavior
+    $('.portfolio-box').on('click touchstart', function(event) {
+        // Only apply on mobile devices (touch screens)
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            event.preventDefault();
+            var $caption = $(this).find('.portfolio-box-caption');
+            var href = $(this).attr('href');
+            
+            // Show the caption
+            $caption.css('opacity', '1');
+            
+            // Navigate after 2 seconds
+            setTimeout(function() {
+                window.location.href = href;
+            }, 2000);
+        }
+    });
+
 })(jQuery); // End of use strict
